@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from pprint import pprint
 from requests_html import HTMLSession
 

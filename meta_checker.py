@@ -17,9 +17,6 @@ def clear_s(s):
     cleared_s = (re.sub(regex, ' ', s)).lower()
     return cleared_s
 
-def symbols_count(s):
-    return len(s)
-
 def words_count(s):
     cleared_s = clear_s(s)
     l = cleared_s.split(' ')
@@ -36,25 +33,25 @@ def keyword_density(s, key=keyword):
 
 result = {
     'url': {
-        'url_symbols': symbols_count(url),
+        'url_symbols': len(url),
         'url_words': words_count(url),
         'url_keyword': keyword_count(url),
         'url_key_density': keyword_density(url)
     },
     'title': {
-        'title_symbols': symbols_count(title),
+        'title_symbols': len(title),
         'title_words': words_count(title),
         'title_keyword': keyword_count(title),
         'title_key_density': keyword_density(title)
     },
     'description': {
-        'description_symbols': symbols_count(description),
+        'description_symbols': len(description),
         'description_words': words_count(description),
         'description_keyword': keyword_count(description),
         'description_key_density': keyword_density(description)
     },
     'h1': {
-        'h1_symbols': symbols_count(h1),
+        'h1_symbols': len(h1),
         'h1_words': words_count(h1),
         'h1_keyword': keyword_count(h1),
         'h1_key_density': keyword_density(h1)

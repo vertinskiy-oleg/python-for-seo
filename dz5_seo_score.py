@@ -67,18 +67,18 @@ print(title_stats, description_stats, h1_stats)
 #Analyse SEO Score
 seo_score = 0
 
-#Title Check
+#Title Check (Max - 50)
 if title_stats['key_count']:
-  seo_score += 10
+  seo_score += 15
   if title_stats['key_density'] > 5:
-    seo_score += 15
+    seo_score += 20
   elif title_stats['key_density'] > 3:
-    seo_score += 10
+    seo_score += 15
   else:
-    seo_score += 1
+    seo_score += 5
   if title_stats['key_pos'] < title_stats['symbols'] / 3:
-    seo_score += 10
-#Description Check 
+    seo_score += 15
+#Description Check (Max - 30)
 if description_stats['key_count']:
   seo_score += 10
   if description_stats['key_density'] > 5:
@@ -89,16 +89,16 @@ if description_stats['key_count']:
     seo_score += 1
   if description_stats['key_pos'] < description_stats['symbols'] / 3:
     seo_score += 10
-#H1 Check
+#H1 Check (Max - 20)
 if h1_stats['key_count']:
   seo_score += 10
   if h1_stats['key_density'] > 5:
-    seo_score += 15
+    seo_score += 5
   elif h1_stats['key_density'] > 3:
-    seo_score += 10
+    seo_score += 2
   else:
     seo_score += 1
   if h1_stats['key_pos'] < h1_stats['symbols'] / 3:
-    seo_score += 10
+    seo_score += 5
 
 print(f'\nSEO Page Quality is: {seo_score}')

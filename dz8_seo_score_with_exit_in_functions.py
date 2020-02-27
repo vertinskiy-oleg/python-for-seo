@@ -6,7 +6,6 @@ def parse_meta():
     """Parse title, description, h1"""
     with HTMLSession() as session:
         resp = session.get(url)
-
     try:
         title = resp.html.xpath('//title')[0].text
     except Exception as e:
@@ -14,7 +13,8 @@ def parse_meta():
         title = ''
 
     try:
-        description = resp.html.xpath('//meta[@name="description"]/@content')[0]
+        description = resp.html.xpath(
+            '//meta[@name="description"]/@content')[0]
     except Exception as e:
         print('Description not found on the page', e)
         description = ''

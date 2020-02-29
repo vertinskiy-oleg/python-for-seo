@@ -4,6 +4,8 @@ from requests_html import HTMLSession
 
 def parse_meta():
     """Parse title, description, h1"""
+    with HTMLSession() as session:
+        resp = session.get(url)
     try:
         title = resp.html.xpath('//title')[0].text
     except Exception as e:
@@ -23,13 +25,13 @@ def parse_meta():
         print('H1 not found on the page', e)
         h1 = ''
 
-    print('*'*50)
+    print('*' * 50)
     print('TITLE:', title)
-    print('*'*50)
+    print('*' * 50)
     print('DESCRIPTION:', description)
-    print('*'*50)
+    print('*' * 50)
     print('H1:', h1)
-    print('*'*50)
+    print('*' * 50)
 
     return title, description, h1
 
@@ -56,9 +58,10 @@ def get_stats(s, key):
 
 def analyze_seo_score():
     """Analyse SEO Score"""
-    title_stats = get_stats(parse_meta()[0], keyword)
-    description_stats = get_stats(parse_meta()[1], keyword)
-    h1_stats = get_stats(parse_meta()[2], keyword)
+    title, description, h1 = parse_meta()
+    title_stats = get_stats(title, keyword)
+    description_stats = get_stats(description, keyword)
+    h1_stats = get_stats(h1, keyword)
 
     print(title_stats, description_stats, h1_stats)
     seo_score = 0
@@ -106,8 +109,4 @@ while True:
         break
     keyword = input('Enter Keyword: ')
 
-    with HTMLSession() as session:
-        resp = session.get(url)
-
-    parse_meta()
     analyze_seo_score()

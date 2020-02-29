@@ -5,3 +5,5 @@ while True:
     else:
         keyword = input('keyword: ')
         print(url, keyword)
+
+range()

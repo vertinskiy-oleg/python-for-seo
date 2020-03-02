@@ -7,11 +7,13 @@ visited = set()
 
 session = HTMLSession()
 
+
 def get_links(url):
     r = session.get(url)
     page_links = {
         l for l in r.html.absolute_links if start_url in l}
     return page_links
+
 
 def crawl(url):
     for l in get_links(url):
@@ -20,9 +22,11 @@ def crawl(url):
         visited.add(l)
         crawl(l)
 
+
 def check_allow(urls):
     robots = Robots.fetch(f'{start_url}/robots.txt')
     return {url for url in urls if robots.allowed(url, 'Googlebot') == True}
+
 
 crawl(start_url)
 
@@ -30,6 +34,3 @@ print(len(visited))
 pprint(visited)
 print(len(check_allow(visited)))
 pprint(check_allow(visited))
-
-
-

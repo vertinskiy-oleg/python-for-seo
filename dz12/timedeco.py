@@ -1,3 +1,5 @@
+from time import time
+
 def time_decorator(func):
     def wrapper(*args, **kwargs):
         t1 = time()

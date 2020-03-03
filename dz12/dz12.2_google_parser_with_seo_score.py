@@ -1,13 +1,14 @@
 import random
 from time import sleep
 from requests_html import HTMLSession
+import seo_score_checker
 
 
 website = 'https://py4you.com/'
 
 domain = website.split('/')[2]
 
-results_format = 'Keyword\tUrl\tPosition\tTitle\tDescription\n'
+results_format = 'Keyword\tUrl\tPosition\tTitle\tDescription\tSEOScore\tTOP3SEOScore\n'
 
 
 with open('keywords.txt', 'r', encoding='utf-8') as f:
@@ -20,42 +21,38 @@ with open('positions.csv', 'r', encoding='utf-8') as f:
 
 r_file = open('positions.csv', 'a', encoding='utf-8')
 
-# r_file.write(results_format)
-
+r_file.write(results_format)
 
 session = HTMLSession()
-
 
 for key in keys_to_scan:
 
     if key in keys_scanned:
         continue
 
-    # engine_link = f'https://www.google.com/search?q={key}&num=100&hl=en'
-    engine_link = f'https://www.bing.com/search?q={key}&count=50'
+    engine_link = f'https://www.google.com/search?q={key}&num=100&hl=en'
+    # engine_link = f'https://www.bing.com/search?q={key}&count=50'
 
     resp = session.get(engine_link)
 
-    # html_snipets = resp.html.xpath('//div[@class="g"]')
-    html_snipets = resp.html.xpath('//li[@class="b_algo"]')
+    html_snippets = resp.html.xpath('//div[@class="g"]')
+    # html_snippets = resp.html.xpath('//li[@class="b_algo"]')
 
-    position = link = title = description = 'not-found'
+    position = link = title = description = seo_score = 'not-found'
 
-    for n, html_item in enumerate(html_snipets, start=1):
-        # href = html_item.xpath('//div[@class="r"]/a[1]/@href')[0]
-        href = html_item.xpath('//h2/a/@href')[0]
-        # print(n, html_item, href)
+    for n, html_item in enumerate(html_snippets, start=1):
+        href = html_item.xpath('//div[@class="r"]/a[1]/@href')[0]
+        # href = html_item.xpath('//h2/a/@href')[0]
         if domain in href:
             link = href
-            # title = html_item.xpath('//h3/text()')[0]
-            title = html_item.xpath('//h2')[0].text
-            # description = html_item.xpath('//span[@class="st"]')[0].text
-            description = html_item.xpath('//div[@class="b_caption"]/p')[0].text
+            title = html_item.xpath('//h3/text()')[0]
+            # title = html_item.xpath('//h2')[0].text
+            description = html_item.xpath('//span[@class="st"]')[0].text
+            # description = html_item.xpath('//div[@class="b_caption"]/p')[0].text
+            seo_score = seo_score_checker.analyze_seo_score(href, key)
             position = n
-            # print(position, title, description)
 
-    # print(position, title, description)
-    key_result = f'{key}\t{link}\t{position}\t{title}\t{description}\n'
+    key_result = f'{key}\t{link}\t{position}\t{title}\t{description}\t{seo_score}\t{top_3_seo_score}\n'
 
     r_file.write(key_result)
 

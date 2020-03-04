@@ -35,11 +35,14 @@ def get_stats(s, key):
     l = s_cleared.split()
     l_cleared = [s for s in l if s != '']
 
-    symbols_count = len(s_cleared)
-    words_count = len(l_cleared)
-    keyword_count = s_cleared.count(key)
-    keyword_density = round(keyword_count / words_count * 100)
-    keyword_position = s_cleared.find(key)
+    if s:
+        symbols_count = len(s_cleared)
+        words_count = len(l_cleared)
+        keyword_count = s_cleared.count(key)
+        keyword_density = round(keyword_count / words_count * 100)
+        keyword_position = s_cleared.find(key)
+    else:
+        symbols_count = words_count = keyword_count = keyword_density = keyword_position = 0
 
     return {'symbols': symbols_count,
             'words': words_count,

@@ -3,21 +3,17 @@ from time import sleep
 from requests_html import HTMLSession
 import seo_score_checker
 
-
 website = 'https://py4you.com/'
 
 domain = website.split('/')[2]
 
-results_format = 'Keyword\tUrl\tPosition\tTitle\tDescription\tSEOScore\tTOP3SEOScore\n'
-
+results_format = 'Keyword\tUrl\tPosition\tTitle\tDescription\tSEOScore\tAvgTopSEOScore\n'
 
 with open('keywords.txt', 'r', encoding='utf-8') as f:
     keys_to_scan = [line.strip() for line in f]
 
-
 with open('positions.csv', 'r', encoding='utf-8') as f:
     keys_scanned = set([line.split('\t')[0] for line in f])
-
 
 r_file = open('positions.csv', 'a', encoding='utf-8')
 
@@ -40,6 +36,10 @@ for key in keys_to_scan:
 
     position = link = title = description = seo_score = 'not-found'
 
+    # Get Average SEO Score from TOP3 results
+    top_href_list = [html_snippets[n].xpath('//div[@class="r"]/a[1]/@href')[0] for n in range(3)]
+    avg_top_seo_score = round(sum([seo_score_checker.analyze_seo_score(href, key) for href in top_href_list]) / 3)
+
     for n, html_item in enumerate(html_snippets, start=1):
         href = html_item.xpath('//div[@class="r"]/a[1]/@href')[0]
         # href = html_item.xpath('//h2/a/@href')[0]
@@ -49,10 +49,12 @@ for key in keys_to_scan:
             # title = html_item.xpath('//h2')[0].text
             description = html_item.xpath('//span[@class="st"]')[0].text
             # description = html_item.xpath('//div[@class="b_caption"]/p')[0].text
-            seo_score = seo_score_checker.analyze_seo_score(href, key)
             position = n
 
-    key_result = f'{key}\t{link}\t{position}\t{title}\t{description}\t{seo_score}\t{top_3_seo_score}\n'
+            # Get Self SEO Score
+            seo_score = seo_score_checker.analyze_seo_score(href, key)
+
+    key_result = f'{key}\t{link}\t{position}\t{title}\t{description}\t{seo_score}\t{avg_top_seo_score}\n'
 
     r_file.write(key_result)
 

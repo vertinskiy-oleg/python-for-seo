@@ -1,16 +1,15 @@
 import os
 import gzip
 
-from filter import line_filter
+from log_filter import error_line_filter
 
 base_dir = 'logs'
 
 all_log_files = os.listdir(base_dir)
 all_log_files.sort()
-print(all_log_files)
 
-result_file = open('results.csv', 'w', encoding='utf-8')
-result_file.write('Date\tIp\tUser Agent\tURL\n')
+result_file = open('error_results.csv', 'w', encoding='utf-8')
+result_file.write('Date\tURL\tStatus Code\n')
 
 results = []
 
@@ -28,7 +27,7 @@ for filename in all_log_files:
 
     for line in log_file:
 
-        data = line_filter(line)
+        data = access_line_filter(line)
 
         if not data:
             continue
@@ -52,5 +51,5 @@ for filename in all_log_files:
     log_file.close()
 
 for result in results:
-    result_file.write(f"{result['date']}\t{result['ip']}\t"
-                      f"{result['user_agent']}\t{result['url']}\n")
+    result_file.write(f"{result['date']}\t{result['url']}\t"
+                      f"{result['user_agent']}\n")

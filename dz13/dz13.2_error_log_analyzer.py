@@ -9,7 +9,7 @@ all_log_files = os.listdir(base_dir)
 all_log_files.sort()
 
 result_file = open('error_results.csv', 'w', encoding='utf-8')
-result_file.write('Date\tURL\tStatus Code\n')
+result_file.write('Date\tURL\tError\n')
 
 results = []
 
@@ -17,7 +17,7 @@ for filename in all_log_files:
 
     file_path = f'{base_dir}/{filename}'
 
-    if 'error' in file_path:
+    if 'access' in file_path:
         continue
 
     if file_path.endswith('.gz'):
@@ -27,29 +27,22 @@ for filename in all_log_files:
 
     for line in log_file:
 
-        data = access_line_filter(line)
+        data = error_line_filter(line)
 
         if not data:
             continue
 
-        ip, ua, url, date = data
+        date, url, error = data
 
         results.append(
             {
-                'ip': ip,
-                'user_agent': ua,
+                'date': date,
                 'url': url,
-                'date': date
+                'error': error
             }
         )
-
-        # if date not in result:
-        #     result[date] = 1
-        # else:
-        #     result[date] += 1
-
     log_file.close()
 
 for result in results:
     result_file.write(f"{result['date']}\t{result['url']}\t"
-                      f"{result['user_agent']}\n")
+                      f"{result['error']}\n")

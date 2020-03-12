@@ -12,27 +12,30 @@ class SearchEngine:
 
 
 class Website:
-    def __init__(self, domain, protocol, cms):
+    def __init__(self, domain, protocol='https://', cms=None):
         self.domain = domain
         self.protocol = protocol
         self.cms = cms
 
-    def _create_abs_url(self, rel_url):
+    def create_abs_url(self, rel_url):
         abs_url = self.protocol + self.domain + rel_url
         return abs_url
 
 
 class Page(Website):
-    def __init__(self, title, desc, h1, rel_url):
-        self.title = title
-        self.desc = desc
-        self.h1 = h1
-        self.rel_url = rel_url
+    def __init__(self, rel_url, domain):
+        super().__init__(domain)
+        self.abs_url = super().create_abs_url(rel_url)
 
 
 class Text:
-    def __init__(self, txt, ):
+    def __init__(self, txt):
+        self.txt = txt
+
+    def __len__(self):
+        return f'This text is {len(self.txt)} symbols length'
 
 
 class Title(Text):
-    pass
+    def __init__(self, txt):
+        super().__init__(txt)

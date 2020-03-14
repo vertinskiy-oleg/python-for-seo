@@ -1,0 +1,7 @@
+[0.2 sec] [OK] https://py4you.com/
+[0.18 sec] [OK] https://py4you.com/development/
+[0.09 sec] [OK] https://py4you.com/courses/
+[0.22 sec] [OK] https://py4you.com/courses/python-django/
+[0.2 sec] [OK] https://py4you.com/courses/python-for-seo/
+[0.19 sec] [OK] https://py4you.com/courses/python-basic/
+[0.08 sec] [OK] https://py4you.com/certificates/

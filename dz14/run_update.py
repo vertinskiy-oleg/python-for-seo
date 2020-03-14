@@ -6,7 +6,7 @@
 5. Отправляем задание на email адрес.
 """
 
-from core import (
+from .core_update import (
     google_scraper, get_text,
     texts_analyzer, COPYWRITER_TASK,
     send_email
@@ -33,7 +33,7 @@ def tz_on_mail(keyword=None):
     task_text = COPYWRITER_TASK.format(
         keywords_main='\n'.join(keywords_main),
         keywords_secondary='\n'.join(keywords_secondary),
-        title=keyword.upper()
+        keyword=keyword.upper()
     )
 
     send_email(task_text, "egor.ivanovvv.2020@gmail.com")

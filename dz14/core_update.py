@@ -8,13 +8,17 @@ from string import punctuation
 
 
 COPYWRITER_TASK = '''
-Написать текст с заголовком: {title}
+Написать текст с заголовком H1 в котором должно 
+быть вхождения ключа {keyword}.
+
+Должны быть заголовки H2-H6 c вхождением ключей 
+с группы {keywords_main}.
 
 В тексте должны быть такие ключевые слова:
-{keywords_main}
+{keywords_main} и {keywords_secondary}.
 
-Также упомянуть в тексте:
-{keywords_secondary}
+Нужно проставить внутреннюю перелинковку по ключам
+с группы {keywords_main}.
 
 Текст должен быть уникальным на минимум 98%.
 Размер текста от 2000 символов.
@@ -65,7 +69,15 @@ def get_text(link):
             '//meta[@name="description"]/@content')[0]
     except IndexError:
         description = ''
-    return description
+    try:
+        title = response.html.xpath('//title')[0].text
+    except IndexError:
+        title = ''
+    try:
+        h1 = response.html.xpath('//h1')[0].text
+    except IndexError:
+        h1 = ''
+    return description + ' ' + title + ' ' + h1
 
 
 def texts_analyzer(texts):

@@ -1,6 +1,6 @@
 import random
 from requests_html import HTMLSession
-from db import VertinskyiOlehOlxCategory as Category, VertinskyiOlehOlxAd as Ad
+from db import Category, Ad
 from peewee import DoesNotExist
 
 

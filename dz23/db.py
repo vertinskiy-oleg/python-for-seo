@@ -10,14 +10,15 @@ connection = {
 db = PostgresqlDatabase('library', autorollback=True, **connection)
 
 
-class VertinskyiOlehOlxCategory(Model):
+class Category(Model):
     name = TextField()
 
     class Meta:
         database = db
+        table_name = 'VertinskyiOlehOlxCategory'
 
 
-class VertinskyiOlehOlxAd(Model):
+class Ad(Model):
     title = TextField()
     date = TextField()
     price = TextField()
@@ -28,8 +29,9 @@ class VertinskyiOlehOlxAd(Model):
 
     class Meta:
         database = db
+        table_name = 'VertinskyiOlehOlxAd'
 
 
 if __name__ == '__main__':
-    db.drop_tables([VertinskyiOlehOlxCategory, VertinskyiOlehOlxAd])
-    db.create_tables([VertinskyiOlehOlxCategory, VertinskyiOlehOlxAd])
+    db.drop_tables([Category, Ad])
+    db.create_tables([Category, Ad])

@@ -25,7 +25,7 @@ class Ad(Model):
     photo = TextField()
     link = TextField()
     city = TextField()
-    category = ForeignKeyField(VertinskyiOlehOlxCategory, backref='ads')
+    category = ForeignKeyField(Category, backref='ads')
 
     class Meta:
         database = db

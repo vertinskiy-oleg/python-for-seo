@@ -1,0 +1,8 @@
+python async/await пример
+async python что это
+python async requests
+python asyncio example
+python aiohttp
+python asyncio requests
+python coroutine
+асинхронность python

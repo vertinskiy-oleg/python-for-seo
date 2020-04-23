@@ -1,0 +1,527 @@
+[
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "Append to file",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сери ализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "открытие файла",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "режим работы с файлом",
+        "keyword_symbols_count": "21",
+        "keyword_words_count": "4"
+    },
+    {
+        "keyword": "чтение файла",
+        "keyword_symbols_count": "12",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "запись в файл",
+        "keyword_symbols_count": "13",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "огромные файлы",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "поиск по файлу",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "3"
+    },
+    {
+        "keyword": "библиотека csv",
+        "keyword_symbols_count": "14",
+        "keyword_words_count": "2"
+    },
+    {
+        "keyword": "сериализация Json и Pickle",
+        "keyword_symbols_count": "26",
+        "keyword_words_count": "4"
+    }
+]

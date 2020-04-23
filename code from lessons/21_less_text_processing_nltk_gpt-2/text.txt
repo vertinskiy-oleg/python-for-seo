@@ -1,0 +1,33 @@
+Space Exploration Technologies Corp., trading as SpaceX, is a private American aerospace
+manufacturer and space transportation services company headquartered in Hawthorne, California.
+It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to
+enable the colonization of Mars. SpaceX has developed several launch vehicles and the Dragon
+spacecraft.
+
+SpaceX's achievements include the first privately funded liquid-propellant rocket to reach
+orbit (Falcon 1 in 2008), the first private company to successfully launch, orbit, and recover
+a spacecraft (Dragon in 2010), the first private company to send a spacecraft to the International
+Space Station (Dragon in 2012), the first propulsive landing for an orbital rocket
+(Falcon 9 in 2015), the first reuse of an orbital rocket (Falcon 9 in 2017), and the first private
+company to launch an object into orbit around the sun (Falcon Heavy's payload of a Tesla Roadster in 2018).
+SpaceX has flown 18 resupply missions to the International Space Station (ISS) under a
+partnership with NASA. NASA also awarded SpaceX a further development contract in 2011 to
+develop and demonstrate a human-rated Dragon, which would be used to transport astronauts
+to the ISS and return them safely to Earth. SpaceX conducted the maiden launch of its
+Dragon 2 spacecraft on a NASA-required demonstration flight (Crew Dragon Demo-1) on March 2,
+2019 and is set to launch its first crewed Dragon 2 on May 7, 2020.
+
+In December 2015, a Falcon 9 accomplished a propulsive vertical landing. This was the first
+such achievement by a rocket for orbital spaceflight. In April 2016, with the launch of CRS-8,
+SpaceX successfully vertically landed the first stage on an ocean drone ship landing platform.
+In May 2016, in another first, SpaceX again landed the first stage, but during a significantly
+more energetic geostationary transfer orbit mission. In March 2017, SpaceX became the
+first to successfully re-launch and land the first stage of an orbital rocket. In January
+2020, with the third launch of the Starlink project, SpaceX became the largest commercial
+satellite constellation operator in the world.
+
+In September 2016, CEO Elon Musk unveiled the Interplanetary Transport System, a privately
+funded launch system to develop spaceflight technology for use in crewed interplanetary
+spaceflight. In 2018, Musk unveiled an updated configuration of the system, named Starship,
+which is planned to be fully reusable and will be the largest rocket ever on its debut,
+scheduled for the early 2020s.

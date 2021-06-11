@@ -39,5 +39,5 @@ soupsieve==1.9.5
 tqdm==4.41.1
 urllib3==1.25.7
 w3lib==1.21.0
-websockets==8.1
+websockets==9.1
 yarl==1.4.2

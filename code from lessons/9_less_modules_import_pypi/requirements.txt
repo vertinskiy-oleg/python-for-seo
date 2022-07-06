@@ -18,7 +18,7 @@ fake-useragent==0.1.11
 idna==2.8
 Kivy==1.11.1
 Kivy-Garden==0.1.4
-lxml==4.5.0
+lxml==4.9.1
 multidict==4.7.4
 parse==1.14.0
 pycosat==0.6.3
